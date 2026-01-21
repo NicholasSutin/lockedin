@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
 
-import { ThemeProvider } from "@/components/theme-provider"
-
+import { ThemeProvider } from "@/components/theme-provider";
+import Navbar from "@/components/navbar"
 
 const inter = Inter({subsets:['latin'],variable:'--font-sans'});
 
@@ -36,7 +36,14 @@ export default function RootLayout({
             defaultTheme="dark"
             disableTransitionOnChange
           >
+            
+            <div className="fixed inset-x-0 top-0 z-50">
+              <Navbar />
+            </div>
+
+          <div className="mt-17">
             {children}
+          </div>
           </ThemeProvider>
         </body>
       </html>
