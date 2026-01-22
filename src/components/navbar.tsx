@@ -24,7 +24,7 @@ export default function Navbar({ className, ...props }: React.ComponentProps<"di
 
         <Link
           href="/try"
-          className="flex h-10 shrink-0 items-center justify-center rounded-full bg-foreground px-5 text-sm font-medium text-background transition-colors hover:bg-foreground/90"
+          className="flex h-10 shrink-0 items-center justify-center rounded-full bg-foreground px-5 text-sm font-medium text-background transition-colors hover:bg-foreground/85"
         >
           Try for free
         </Link>

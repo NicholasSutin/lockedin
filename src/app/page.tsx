@@ -1,6 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import TextAnimate from "@/components/ui/text-animate";
+import { Footer } from "@/components/Footer";
+
 export default function Page() {
   return (
     <div className="mx-auto max-w-250">
@@ -32,7 +35,7 @@ export default function Page() {
           </h1>
 
           <p className="w-full text-center">
-            So we made it easier for everyone to lock in. <br />Currently in early-access beta.
+            So we made it easier for everyone to <u>lock in.</u> <br />Currently in early-access beta.
           </p>
           <Link href="#" className="mx-auto rounded-[1rem] bg-primary-foreground/80 transition-colors hover:bg-primary-foreground flex items-center justify-center gap-2 p-2 ">
             <Image
@@ -41,17 +44,69 @@ export default function Page() {
               width={400}
               height={400}
               className="w-auto h-10 object-contain"
-            />     
-            <p className="px-2 pr-2.5 text-xl">       
+            />
+            <p className="px-2 pr-2.5 text-xl">
               Try on Testflight
             </p>
           </Link>
         </div>
       </div>
-          {/*next section*/}
 
-      <div className="w-full h-screen outline"></div>
+      {/*next section*/}
+      <div className="w-full">
+        <div className="h-[90vh] flex items-center">
+          <TextAnimate text="5 to 6 hours. That's the time you'll spend today on your phone, probably without realizing." type="rollIn" />
+        </div>
+      </div>
 
+      {/*next section*/}
+      <div className="grid grid-cols-2 gap-8 p-8">
+        <div className="h-96 flex items-center">
+          <div>
+            <p className="border-3 p-2 px-3 rounded-full text-sm w-fit">Focus Score™</p>
+            <h2 className="text-xl font-bold py-3" >Track Your Focus</h2>
+            <p>See your screen time and focus change in real time.</p>
+            <p>You'll also get a progress on your report every week.</p>
+          </div>
+        </div>
+
+        <div>
+          <div className="p-4 flex items-center justify-center">
+            <Image
+              src="/ScrDemo1.webp"
+              alt="Screenshot demo"
+              width={1200}
+              height={675}
+              className="w-auto object-contain"
+            />
+          </div>
+        </div>
+
+        <div>
+          <div className="p-4 flex items-center justify-center">
+            <Image
+              src="/PhoneModes.gif"
+              alt="Phone Modes"
+              width={3173}
+              height={4319}
+              className="w-auto object-contain"
+            />
+          </div>
+        </div>
+
+        <div className="h-96 flex items-center">
+          <div className="ml-10">
+            <p className="border-3 p-2 px-3 rounded-full text-sm w-fit">Focus Blocks™</p>
+            <h2 className="text-xl font-bold py-3" >Customize your blocks</h2>
+            <p>Lock the apps of your choice.</p>
+            <p>Apply automations or physical restrictions.</p>
+          </div>
+        </div>
+
+      </div>
+
+
+      <Footer />
     </div>
   );
 }
