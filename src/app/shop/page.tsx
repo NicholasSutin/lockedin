@@ -4,7 +4,7 @@ import { ProductCardOne } from "@/components/commercn/product-cards/product-card
 const products = [
   {
     name: "NFC tag",
-    description: "The simple technology behind our physical capabilities.",
+    description: "The simple technology behind our app. Reprogrammable and rewritable, shipped unlocked.",
     price: 0.50,
     image: "/NFC-tag.webp",
   },
@@ -24,8 +24,8 @@ const products = [
 
 export default function Page() {
   return (
-    <div className="mx-auto max-w-250">
-      <div className="mt-20 mb-12">
+    <div className="mx-auto max-w-250 mt-30">
+      <div className="my-25">
         <h1 className="text-4xl font-bold text-center mb-4">Shop</h1>
         <p className="text-center text-muted-foreground">
           Discover our collection of focus-enhancing products

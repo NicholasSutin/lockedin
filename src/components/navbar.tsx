@@ -17,6 +17,7 @@ export default function Navbar({ className, ...props }: React.ComponentProps<"di
             [&_a]:text-foreground/80 [&_a]:transition-colors [&_a:hover]:text-foreground">
             <Link href="/demo">Demo</Link>
             <Link href="/shop">Shop</Link>
+            <Link href="/about">About Us</Link>
 
         </div>
 

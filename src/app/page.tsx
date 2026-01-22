@@ -206,7 +206,7 @@ export default function Page() {
       </section>
 
       {/*--next section--*/}
-      <section className="w-full py-20 mt-30">
+      <section className="w-full mt-30">
   <div className="max-w-6xl mx-auto">
     <h2 className="text-3xl w-min p-5 whitespace-nowrap mx-auto rounded-lg md:text-4xl lg:text-5xl text-center mb-6 text-foreground/80">
       Key Features

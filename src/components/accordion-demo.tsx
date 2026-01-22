@@ -9,7 +9,7 @@ import {
 export function AccordionDemo() {
   return (
     <Accordion
-      className="w-full mt-30"
+      className="w-full mt-8"
       defaultValue={["item-1"]}
     >
       <AccordionItem value="item-1" >
