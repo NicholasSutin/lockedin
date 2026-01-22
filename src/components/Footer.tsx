@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button';
 export function Footer() {
   return (
     <footer className="w-full my-20">
-      <div className="relative w-full rounded-xl overflow-hidden bg-accent-foreground">
+      <div className="relative w-full rounded-full overflow-hidden bg-accent-foreground">
         <div className="absolute inset-0 h-full">
           <Image
             src={gradient}
@@ -19,7 +19,7 @@ export function Footer() {
         </div>
 
         <div className="relative z-10">
-          <div className="px-6 py-8 grid grid-cols-[auto_1fr_auto_auto] gap-x-8 bg-black/40 backdrop-blur-md rounded-xl text-foreground">
+          <div className="px-6 pr-20 py-8 grid grid-cols-[auto_1fr_auto_auto] gap-x-8 bg-black/40 backdrop-blur-md rounded-xl text-foreground">
             {/* Column 1 - Circular Text */}
             <div className="px-3">
               <CircularText text="Locked In Locked In " />

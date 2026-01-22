@@ -108,8 +108,8 @@
   --sidebar-ring: oklch(0.553 0.013 58.071);
 
   --sb-track: #060a12;
-  --sb-thumb: #2a364a;
-  --sb-thumb-hover: #3a4a66;
+  --sb-thumb: #494949;
+  --sb-thumb-hover: #979797;
 }
 
 /* Optional: keep if you still use `.dark` in markup (doesn't change anything if same as :root) */
