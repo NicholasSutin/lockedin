@@ -32,7 +32,7 @@ export default function Page() {
         />
         
         <video 
-            src="https://content.nicholassutin.com/storage/lock-in/EarlyHolderDemoBlender.mov" 
+            src="https://content.nicholassutin.com/storage/lock-in/BlenderScreenRecording.mov" 
             autoPlay 
             muted 
             loop 
